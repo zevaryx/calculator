@@ -1,0 +1,11 @@
+image: python:rc
+cache:
+  paths:
+    - ~/.cache/pip/
+
+before_script:
+  - python -V
+
+tests:
+  script:
+    - python -m unittest discover tests
