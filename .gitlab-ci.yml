@@ -5,7 +5,8 @@ cache:
 
 before_script:
   - python -V
+  - python -m pip install --upgrade pytest pytest-cov 
 
 tests:
   script:
-    - python -m unittest discover tests
+    - python -m pytest --cov=calculator tests/
