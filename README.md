@@ -1,6 +1,9 @@
 # calculator
 
-![GitHub Actions](https://github.com/zevaryx/calculator/actions/workflows/python-package.yml/badge.svg) ![GitLab CI/CD](https://git.zevaryx.com/zevaryx/calculator/badges/main/pipeline.svg)
+![GitHub Actions](https://github.com/zevaryx/calculator/actions/workflows/python-package.yml/badge.svg)
+
+[![pipeline status](https://git.zevaryx.com/zevaryx/calculator/badges/main/pipeline.svg)](https://git.zevaryx.com/zevaryx/calculator/-/commits/main)
+[![coverage report](https://git.zevaryx.com/zevaryx/calculator/badges/main/coverage.svg)](https://git.zevaryx.com/zevaryx/calculator/-/commits/main)
 
 A simple calculator based on [CodePulse's Math Interpreter series](https://www.youtube.com/playlist?list=PLZQftyCk7_Sdu5BFaXB_jLeJ9C78si5_3)
 
