@@ -1,6 +1,6 @@
 # calculator
 
-![GitHub Actions](https://github.com/zevaryx/calculator/actions/workflows/python-package.yml/badge.svg)
+![GitHub Actions](https://github.com/zevaryx/calculator/actions/workflows/python-package.yml/badge.svg) [![codecov](https://codecov.io/gh/zevaryx/calculator/branch/main/graph/badge.svg?token=GG7DVUW7RJ)](https://codecov.io/gh/zevaryx/calculator)
 
 [![pipeline status](https://git.zevaryx.com/zevaryx/calculator/badges/main/pipeline.svg)](https://git.zevaryx.com/zevaryx/calculator/-/commits/main)
 [![coverage report](https://git.zevaryx.com/zevaryx/calculator/badges/main/coverage.svg)](https://git.zevaryx.com/zevaryx/calculator/-/commits/main)
