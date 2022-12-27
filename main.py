@@ -1,7 +1,5 @@
 import sys
-from calculator.interpreter import Interpreter
-from calculator.lexer import Lexer
-from calculator.parser_ import Parser
+from calculator import calculate
 
 if __name__ == "__main__":
     MIN_PYTHON = (3, 10)
@@ -12,14 +10,7 @@ if __name__ == "__main__":
     while True:
         try:
             text = input(">> ")
-            lexer = Lexer(text)
-            tokens = lexer.generate_tokens()
-            parser = Parser(tokens)
-            tree = parser.parse()
-            if not tree:
-                continue
-            interpreter = Interpreter()
-            value = interpreter.visit(tree)
-            print(value)
+            if value := calculate(text):
+                print(value)
         except Exception as e:
             print(e)
