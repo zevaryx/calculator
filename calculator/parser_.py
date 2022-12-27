@@ -7,7 +7,7 @@ class Parser:
         self.tokens = iter(tokens)
         self.advance()
 
-    def raise_error(self, e = None):
+    def raise_error(self, e=None):
         if e:
             raise Exception(f"Error: {e}")
         raise Exception("Invalid syntax")
