@@ -28,10 +28,10 @@ class Lexer:
                 case "-":
                     self.advance()
                     yield Token(TokenType.MINUS)
-                case "*":
+                case "*" | "x" | "×":
                     self.advance()
                     yield Token(TokenType.MULTIPLY)
-                case "/":
+                case "/" | "÷":
                     self.advance()
                     yield Token(TokenType.DIVIDE)
                 case "(":
@@ -54,9 +54,7 @@ class Lexer:
         number_str = self.current_char
         self.advance()
 
-        while self.current_char is not None and (
-            self.current_char == "." or self.current_char in digits
-        ):
+        while self.current_char is not None and (self.current_char == "." or self.current_char in digits):
             if self.current_char == ".":
                 decimal_pt_count += 1
                 if decimal_pt_count > 1:
