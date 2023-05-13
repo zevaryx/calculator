@@ -9,8 +9,8 @@ class Parser:
 
     def raise_error(self, e=None):
         if e:
-            raise Exception(f"Error: {e}")
-        raise Exception("Invalid syntax")
+            raise Exception(f"{e}")
+        raise ValueError("Invalid syntax")
 
     def advance(self):
         try:
@@ -72,6 +72,8 @@ class Parser:
 
     def factor(self):
         token = self.current_token
+        if not token:
+            self.raise_error()
 
         match token.type:
             case TokenType.LPAREN:
